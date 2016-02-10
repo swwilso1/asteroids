@@ -58,8 +58,11 @@ class Vector(object):
 
     def normalize(self):
         magnitude = self.magnitude
+        newValues = []
         for i in range(0, len(self.__values)):
-            self.__values[i] /= magnitude
+            newValues.append(self.__values[i] / magnitude)
+
+        self.__values = newValues
 
     # End normalize
 
