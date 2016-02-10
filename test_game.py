@@ -24,7 +24,9 @@ while True:
     
     randomPoint = (randint(0,589),randint(0,429))
 
-    a = Asteroid(randomColor, randomBox)
+    randomAsteroidPoints = randint(6,12)
+
+    a = Asteroid(randomColor, randomBox, randomAsteroidPoints)
 
     a.draw(screen, randomPoint)
 
@@ -32,5 +34,5 @@ while True:
 
     pygame.display.update()
 
-    sleep(.2)
+    sleep(1)
 
